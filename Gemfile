@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'bootstrap-sass', '~> 3.3'
+gem 'devise', '~> 3.4.1'
 gem 'font-awesome-rails', '~> 4.2'
 gem 'simple_form', '3.1.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
