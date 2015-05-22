@@ -16,6 +16,10 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 @import 'font-awesome';
+@import "projects";
+@import "tickets";
+@import "admin/application";
+@import "responsive";
 
 body {
 	padding-top: 70px;
@@ -25,7 +29,8 @@ form {
 	max-width: 500px;
 }
 
-.page-header {
+header {
+	@extend .page-header;
 	position: relative;
 	padding-bottom: 0px;
 
@@ -35,14 +40,17 @@ form {
 }
 
 ul.actions {
-	list-style-type: none;
+	@extend .list-unstyled;
+	@extend .list-inline;
 	position: absolute;
-	top: 4px;
+	bottom:  -2px;
 	right: 2px;
+	max-width: 45%;
+	text-align: right;
 
-	li {
+	/*li {
 		display: inline-block;
-	}
+	}*/
 }
 
 a.new, a.edit, a.delete {
@@ -50,7 +58,7 @@ a.new, a.edit, a.delete {
 
 	&:before {
 		font-family: "FontAwesome";
-		padding-right: 0.5em;	
+		padding-right: 0.5em;
 	}
 }
 
