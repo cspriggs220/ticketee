@@ -6,6 +6,13 @@
 	<div class="page-header">
 		<h2><%= @ticket.title %></h2>
 
+		<table id="attributes">
+			<tr>
+				<th>Author:</th>
+				<td><%= @ticket.author.email %></td>
+			</tr>
+		</table>
+
 		<ul class='actions'>
 			<li><%= link_to "Edit Ticket", [:edit, @project, @ticket],
 				class: "edit" %></li>
